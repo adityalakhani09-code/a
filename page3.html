@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body id="page3">
+    <div id="transition-overlay" class="active"></div>
+
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <canvas id="particle-canvas"></canvas>
+
+    <main class="finale-container">
+        <h1 class="finale-title glowing-text fade-in-up">I loveeee you babyyyy <span class="emoji heartbeat">❤️</span></h1>
+        
+        <button id="btn-restart" class="restart-btn interactive fade-in-up delay-2">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="white"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </button>
+    </main>
+
+    <!-- Global Music Player -->
+    <div class="music-player interactive" id="music-player">
+        <audio id="bg-music" loop preload="auto">
+            <source src="music/love.mp3" type="audio/mpeg">
+        </audio>
+        <div class="player-controls">
+            <button id="play-pause-btn" class="ctrl-btn">
+                <svg id="icon-play" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <svg id="icon-pause" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+            </button>
+            <div class="volume-container">
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

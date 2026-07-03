@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Luxury Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body id="page1">
+    <!-- Global Overlay for Cinematic Transitions -->
+    <div id="transition-overlay" class="active"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Background Canvas for Particles -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Background Elements -->
+    <div class="ambient-glow"></div>
+
+    <!-- Main Content -->
+    <main class="welcome-container">
+        <h1 class="romantic-title fade-in-up">Do you love me? <span class="emoji">❤️</span></h1>
+        
+        <div class="action-buttons fade-in-up delay-1">
+            <button id="btn-yes" class="premium-btn yes-btn interactive">
+                <span class="btn-text">❤️ Yes</span>
+                <div class="btn-glow"></div>
+            </button>
+            
+            <div class="no-btn-wrapper">
+                <button id="btn-no" class="premium-btn no-btn interactive">
+                    <span class="btn-text">🤍 No</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Global Music Player -->
+    <div class="music-player interactive" id="music-player">
+        <audio id="bg-music" loop preload="auto">
+            <source src="music/love.mp3" type="audio/mpeg">
+        </audio>
+        <div class="player-controls">
+            <button id="play-pause-btn" class="ctrl-btn">
+                <svg id="icon-play" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <svg id="icon-pause" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+            </button>
+            <div class="volume-container">
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
