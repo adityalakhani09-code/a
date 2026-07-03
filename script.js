@@ -309,10 +309,10 @@ function initPage2() {
     const endTxt = document.getElementById("gallery-end-text");
 
     const photos = [
-        { src: "images/photo1.jpg", caption: "" },
-        { src: "images/photo2.jpg", caption: "" },
-        { src: "images/photo3.jpg", caption: "" },
-        { src: "images/photo4.jpg", caption: "" }
+        { src: "photo1.jpg", caption: "" },
+        { src: "photo2.jpg", caption: "" },
+        { src: "photo3.jpg", caption: "" },
+        { src: "photo4.jpg", caption: "" }
     ];
     let currentPhotoIdx = 0;
 
